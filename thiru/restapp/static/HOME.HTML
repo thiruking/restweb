@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        :root {
+            --primary-color: #FF5733; /* Warm orange */
+            --secondary-color: #F5F5F5; /* Light gray */
+            --accent-color: #333333; /* Dark gray */
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: var(--secondary-color);
+            color: var(--accent-color);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            background-color: var(--accent-color);
+            padding: 0.5rem 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: var(--primary-color);
+        }
+
+        .banner {
+            background-image: url('banner.jpg'); /* Replace with your banner image */
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        .content {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .content h2 {
+            color: var(--primary-color);
+        }
+
+        footer {
+            background-color: var(--accent-color);
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Restaurant</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="administration.html">Administration</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <div class="banner">
+        <h2>Delicious Food Awaits!</h2>
+    </div>
+
+    <main>
+        <section class="content">
+            <h2>About Us</h2>
+            <p>We serve the most delicious and fresh food in town. Explore our menu and enjoy a delightful dining experience!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Developed by [Your Name] &copy; 2024</p>
+    </footer>
+</body>
+</html>
